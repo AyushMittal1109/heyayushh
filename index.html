@@ -10,150 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(37, 37, 61);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
+    <link rel="stylesheet" type="text/css" href="./styles/contactMe.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
 
-      nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 3rem;
-        background-color: rgb(52, 52, 92);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 1rem;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      nav ul li a:hover {
-        font-size: 1.02rem;
-        color: rgb(123, 115, 187);
-      }
-      .left {
-        font-size: 2rem;
-        position: relative;
-        left: 2rem;
-
-      }
-      .right{
-        position: relative;
-        right: 2rem;
-      }
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        margin: 2rem 0;
-        font-size: 4rem;
-      }
-      .firstSection > div {
-        width: 35%;
-        margin: 2rem 0;
-      }
-      .leftSection {
-      }
-      .rightSection {
-        display: flex;
-        justify-content: center;
-      }
-
-      .rightSection > img {
-        width: 25rem;
-      }
-      .name {
-        color: rgb(123, 115, 187);
-      }
-      #element {
-        font-size: 3rem;
-      }
-      .secondSection {
-        max-width: 80vw;
-        /* background-color: red; */
-        margin: auto;
-        height: 30rem;
-      }
-      .text-grey {
-        color: grey;
-        font-size: 15px;
-      }
-      main hr {
-        border: 0;
-        background: rgb(144, 144, 180);
-        height: 1.2px;
-        margin: 40px 80px;
-      }
-      .secondSection .box {
-        background: white;
-        width: 80vw;
-        height: 2px;
-        margin: 80px 0;
-        display: flex;
-      }
-      .secondSection .verticle {
-        height: 93px;
-        width: 1px;
-        background-color: white;
-        margin: 0 100px;
-      }
-      .verticle-img {
-        width: 70px;
-        height: 70px;
-        position: relative;
-        top: -66px;
-        right: 33px;
-        padding: auto;
-      }
-      .verticle-img img{
-        width: 60px;
-        margin: 5px 5px;
-      }
-      .verticle-title {
-        font-size: 20px;
-        position: relative;
-        top: 16px;
-      }
-      .verticle-desc {
-        width: 179px;
-        font-size: 12px;
-        position: relative;
-        top: 20px;
-        color: grey;
-      }
-      footer{
-        background-color: rgb(19, 19, 49);
-        padding-top: 10px;
-        /* height: 200px; */
-      }
-      .footer{
-        display: flex;
-        justify-content: space-around;
-      }
-      .footer li{
-        list-style: none;
-      }
-      .footer > div{
-        width: 20rem;
-      }
-      footer .text-bottom-center{
-        color: grey;
-        padding: 1rem 0;
-        text-align: center;
-      }
-    </style>
+    <script src="scripts/pages.js"></script>
+    
   </head>
   <body>
     <header>
@@ -161,16 +22,17 @@
         <div class="left">Heyayushh</div>
         <div class="right">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Career</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact me</a></li>
+            <!-- ["home", "contactMe","Projects","todo"] -->
+            <li onclick="changePage('home')">Home</li>
+            <li>About</li>
+            <li>Career</li>
+            <li>Projects</li>
+            <li onclick="changePage('contactMe')">Contact me</li>
           </ul>
         </div>
       </nav>
     </header>
-    <main>
+    <div id="home" style="display: block;">
       <section class="firstSection">
         <div class="leftSection">
           Hi, my name is <span class="name">Ayush Mittal </span>
@@ -251,7 +113,17 @@
           <div class="verticle"></div>
         </div>
       </section>
-    </main>
+    </div>
+
+    <div id="contactMe" style="display: none;">
+        <h1>Contact</h1>
+        <div id="contact-list-box">
+            <ul>
+                <li><img src="./images/gmail.png" alt=""> <a href="mailto:Heyayushh@gmail.com">: heyayushh@gmail.com</a></li>
+                <li><img src="./images/linkedin.png" alt=""> <a href="https://www.linkedin.com/in/heyayushh/">: heyayushh</a></li>
+            </ul>
+        </div>
+    </div>
     <footer>
         <div class="footer">
             <div class="footer-first">

@@ -1,0 +1,31 @@
+#contactMe h1{
+    color: white;
+    font-size: 15rem;
+    text-align: center;
+}
+
+#contactMe img{
+    width: 3rem;
+}
+
+#contactMe ul {
+    list-style: none;
+}
+
+#contactMe li {
+    display: flex;
+    align-items: center;
+}
+
+#contactMe a{
+    text-decoration: none;
+    color: white;
+}
+
+#contact-list-box{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(19, 19, 49);
+    margin: 2rem 10rem;
+    
+}
