@@ -1,0 +1,34 @@
+#project-container {
+    
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 2rem;
+    
+}
+.project-card {
+    display: flex;
+    flex-direction: row;
+    /* width: 60vw; */
+    
+}
+.project-img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.project-card-left {
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card-right {
+    width: 50vw;
+    height: 20vh;
+}
+

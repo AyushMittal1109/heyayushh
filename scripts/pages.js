@@ -1,4 +1,4 @@
-const pages = ["home", "contactMe","Projects","todo"]
+const pages = ["home", "contactMe","projects","todo"]
 
 const changePage = (activatePage) => {
     pages.forEach( page => {
