@@ -63,6 +63,7 @@
 
   .rightSection button {
     width: 10rem;
+    margin-top: 1rem;
   }
 
   .rightSection > img {
