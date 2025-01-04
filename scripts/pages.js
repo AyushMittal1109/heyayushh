@@ -1,4 +1,4 @@
-const pages = ["home", "contactMe","projects","todo"]
+const pages = ["home", "contactMe","projects","career"]
 
 const changePage = (activatePage) => {
     pages.forEach( page => {
@@ -9,4 +9,8 @@ const changePage = (activatePage) => {
             document.getElementById(page).style.display = "none";
         }
     })
+}
+
+const openResume = () => {
+    window.open("https://drive.google.com/file/d/10QlnCPKctdnBgDjN4G6-3Aa_A4Whmu2r/view", "_blank");
 }
