@@ -14,10 +14,12 @@
     <link rel="stylesheet" type="text/css" href="./styles/home.css" />
     <link rel="stylesheet" type="text/css" href="./styles/cards.css" />
     <link rel="stylesheet" type="text/css" href="./styles/projects.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/career.css" />
 
     <script src="scripts/pages.js"></script>
     <script src="scripts/cards.js"></script>
     <script src="scripts/projects.js"></script>
+    <script src="scripts/career.js"></script>
     
   </head>
   <body>
@@ -28,7 +30,7 @@
           <ul>
             <li onclick="changePage('home')">Home</li>
             <li>About</li>
-            <li>Career</li>
+            <li onclick="changePage('career')">Career</li>
             <li onclick="changePage('projects')">Projects</li>
             <li onclick="changePage('contactMe')">Contact me</li>
           </ul>
@@ -58,6 +60,7 @@
         </div>
         <div class="rightSection">
           <img src="./images/img1.png" alt="" />
+          <button onclick="openResume()">Resume</button>
         </div>
       </section>
       <hr />
@@ -71,6 +74,10 @@
 
     <div id="projects"  style="display: none;">
         <div id="project-container"></div>
+    </div>
+
+    <div id="career"  style="display: none;">
+        <div id="career-container"></div>
     </div>
 
     <div id="contactMe" style="display: none;">
