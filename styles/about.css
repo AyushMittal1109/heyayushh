@@ -1,4 +1,4 @@
-#career-container {
+#hobbies-container {
     
     display: flex;
     width: 80vw;
@@ -8,18 +8,25 @@
     margin-top: 2rem;
     
 }
-.career-card {
+
+#about  h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+
+.about-card {
     display: flex;
     flex-direction: row;
     /* width: 60vw; */
     
 }
-.career-img {
+.about-img {
     width: 5rem;
     height: 5rem;
 }
 
-.career-card-left {
+.about-card-left {
     width: 30vw;
     height: 20vh;
     display: flex;
@@ -27,7 +34,7 @@
     align-items: center;
 }
 
-.career-card-right {
+.about-card-right {
     width: 50vw;
     height: 20vh;
     text-align: center;

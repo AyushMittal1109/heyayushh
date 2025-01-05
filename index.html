@@ -15,11 +15,13 @@
     <link rel="stylesheet" type="text/css" href="./styles/cards.css" />
     <link rel="stylesheet" type="text/css" href="./styles/projects.css" />
     <link rel="stylesheet" type="text/css" href="./styles/career.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/about.css" />
 
     <script src="scripts/pages.js"></script>
     <script src="scripts/cards.js"></script>
     <script src="scripts/projects.js"></script>
     <script src="scripts/career.js"></script>
+    <script src="scripts/about.js"></script>
     
   </head>
   <body>
@@ -29,7 +31,7 @@
         <div class="right">
           <ul>
             <li onclick="changePage('home')">Home</li>
-            <li>About</li>
+            <li onclick="changePage('about')">About</li>
             <li onclick="changePage('career')">Career</li>
             <li onclick="changePage('projects')">Projects</li>
             <li onclick="changePage('contactMe')">Contact me</li>
@@ -70,6 +72,11 @@
         <div class="box">
       </section>
       <div id="card-container" ></div>
+    </div>
+
+    <div id="about"  style="display: none;">
+        <h1>Hobbies</h1>
+        <div id="hobbies-container"></div>
     </div>
 
     <div id="projects"  style="display: none;">
